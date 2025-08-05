@@ -8,9 +8,9 @@ Materiais disponibilizados:
 - Arquivo PDF da apresentação
   
 - Script de instalação de um ToolBox-AppSec para o Debian
-  -- Setup do toolbox-appsec (setup.sh)
+  # Setup do toolbox-appsec (setup.sh)
   
 - Script de instalação dos laboratórios da OWASP
-  -- OWASP crAPI (setup-owasp-crapi.sh)
-  -- OWASP Juice-shop (setup-owasp-juice-shop.sh)
-  -- OWASP WebGoat (setup-owasp-webgoat.sh)
+  # OWASP crAPI (setup-owasp-crapi.sh)
+  # OWASP Juice-shop (setup-owasp-juice-shop.sh)
+  # OWASP WebGoat (setup-owasp-webgoat.sh)
