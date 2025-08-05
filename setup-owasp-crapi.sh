@@ -1,5 +1,5 @@
+#!/bin/bash
 #setup-owasp-crapi.sh
-
 echo "Download do projeto crAPI da OWASP"
 wget https://github.com/OWASP/crAPI/archive/refs/heads/main.zip
 echo "Descompacte o arquivo e entre na pasta do docker"
