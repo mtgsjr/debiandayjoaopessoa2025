@@ -2,7 +2,7 @@
 
 echo "Versoes atuais do docker e docker-compose:"
 docker --version
-docker-compose --version
+docker compose version
 
 echo -n "Atualizando o Docker e o Docker-Compose..."
 
@@ -19,3 +19,5 @@ sudo usermod -aG docker $USER
 newgrp docker
 docker compose version
 sudo apt autoremove
+
+echo "Reinicie... é melhor..."
