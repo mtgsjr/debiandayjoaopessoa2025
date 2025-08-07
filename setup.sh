@@ -14,7 +14,7 @@ echo "[+] Instalando utilitários básicos..."
 sudo apt install -y curl wget git unzip vim jq python3 python3-pip build-essential net-tools iputils-ping nmap tmux zsh docker.io docker-compose golang
 
 echo "[+] Instalando ffuf..."
-go install github.com/ffuf/ffuf/v2@latest
+sudo go install github.com/ffuf/ffuf/v2@latest
 cp ~/go/bin/ffuf ~/toolbox-appsec/fuzzing/
 
 echo "[+] Instalando subfinder..."
@@ -67,6 +67,7 @@ mv trivy toolbox-appsec/utils/
 
 echo "Atribuindo as permissões ao Docker"
 sudo usermod -aG docker $USER
+sudo usermod -aG vboxuser
 
 echo "[+] Instalação concluída com sucesso!"
 echo "[!] Faça logout/login para aplicar permissões do Docker (ou use 'newgrp docker')"
