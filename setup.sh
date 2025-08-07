@@ -42,7 +42,7 @@ git clone https://github.com/zaproxy/zaproxy.git
 mv zaproxy toolbox-appsec/scanners/zap
 
 echo "[+] Ferramenta 8/13 -> Instalando XSStrike..."
-git clone https://github.com/s0md3v/XSStrike ~/toolbox-appsec/scanners/XSStrike
+git clone https://github.com/s0md3v/XSStrike toolbox-appsec/scanners/XSStrike
 sudo pip3 install -r toolbox-appsec/scanners/XSStrike/requirements.txt --break-system-packages
 
 echo "[+] Ferramenta 9/13 -> Instalando Dirsearch..."
