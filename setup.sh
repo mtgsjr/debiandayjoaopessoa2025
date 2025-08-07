@@ -43,18 +43,18 @@ mv zaproxy toolbox-appsec/scanners/zap
 
 echo "[+] Ferramenta 8/13 -> Instalando XSStrike..."
 git clone https://github.com/s0md3v/XSStrike ~/toolbox-appsec/scanners/XSStrike
-pip3 install -r toolbox-appsec/scanners/XSStrike/requirements.txt --break-system-packages
+sudo pip3 install -r toolbox-appsec/scanners/XSStrike/requirements.txt --break-system-packages
 
 echo "[+] Ferramenta 9/13 -> Instalando Dirsearch..."
 git clone https://github.com/maurosoria/dirsearch.git
 mv dirsearch toolbox-appsec/fuzzing/
 
 echo "[+] Ferramenta 10/13 -> Instalando Semgrep..."
-pip3 install semgrep --break-system-packages
+sudo pip3 install semgrep --break-system-packages
 ln -s $(which semgrep) toolbox-appsec/static-analysis/semgrep
 
 echo "[+] Ferramenta 11/13 -> Instalando Bandit..."
-pip3 install bandit --break-system-packages
+sudo pip3 install bandit --break-system-packages
 ln -s $(which bandit) toolbox-appsec/static-analysis/bandit
 
 echo "[+] Ferramenta 12/13 -> Instalando Gitleaks..."
