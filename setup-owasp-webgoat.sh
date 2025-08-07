@@ -3,7 +3,7 @@
 #setup-owasp-webgoat.sh
 
 echo "O projeto pode ser acessado em https://github.com/WebGoat/WebGoat"
-echo " " -n
+echo " " 
 echo "Instale o JDK Java"
 sudo apt install -y openjdk-17-jre
 echo "Este comando fará o download da imagem se ela não existir no Debian e depois executará o container"
