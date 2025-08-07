@@ -20,7 +20,13 @@ echo "Download do projeto crAPI da OWASP"
 wget https://github.com/OWASP/crAPI/archive/refs/heads/main.zip
 
 echo "Descompacte o arquivo e entre na pasta do docker"
-unzip main.zip && cd crAPI-main/deploy/docker
+unzip main.zip 
+
+echo "Apagar o arquivo ZIP"
+sudo rm -rf main.zip
+
+echo "Entrar no diretório docker do projeto"
+cd crAPI-main/deploy/docker
 
 echo "Fazendo o download da imagem"
 sudo docker compose pull
