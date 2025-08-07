@@ -13,55 +13,55 @@ mkdir -p ~/toolbox-appsec/{recon,fuzzing,scanners,static-analysis,utils,scripts}
 echo "[+] Instalando utilitários básicos..."
 sudo apt install -y curl wget git unzip vim jq python3 python3-pip build-essential net-tools iputils-ping nmap tmux zsh docker.io docker-compose golang
 
-echo "[+] Instalando ffuf..."
+echo "[+] Ferramenta 1/13 -> Instalando ffuf..."
 go install github.com/ffuf/ffuf/v2@latest
 cp ~/go/bin/ffuf ~/toolbox-appsec/fuzzing/
 
-echo "[+] Instalando subfinder..."
+echo "[+] Ferramenta 2/13 -> Instalando subfinder..."
 git clone https://github.com/projectdiscovery/subfinder.git
 mv subfinder toolbox-appsec/recon/
 
-echo "[+] Instalando Amass..."
+echo "[+] Ferramenta 3/13 -> Instalando Amass..."
 git clone https://github.com/owasp-amass/amass.git
 mv amass toolbox-appsec/recon
 
-echo "[+] Instalando wfuzz..."
+echo "[+] Ferramenta 4/13 -> Instalando wfuzz..."
 sudo apt install -y wfuzz
 ln -s $(which wfuzz) ~/toolbox-appsec/fuzzing/wfuzz
 
-echo "[+] Instalando SQLMap..."
+echo "[+] Ferramenta 5/13 -> Instalando SQLMap..."
 sudo apt install -y sqlmap
 ln -s $(which sqlmap) ~/toolbox-appsec/scanners/sqlmap
 
-echo "[+] Instalando Nikto..."
+echo "[+] Ferramenta 6/13 -> Instalando Nikto..."
 git clone https://github.com/sullo/nikto.git
 mv nikto toolbox-appsec/scanners
 
-echo "[+] Instalando OWASP ZAP..."
+echo "[+] Ferramenta 7/13 -> Instalando OWASP ZAP..."
 git clone https://github.com/zaproxy/zaproxy.git
 mv zaproxy toolbox-appsec/scanners/zap
 
-echo "[+] Instalando XSStrike..."
+echo "[+] Ferramenta 8/13 -> Instalando XSStrike..."
 git clone https://github.com/s0md3v/XSStrike ~/toolbox-appsec/scanners/XSStrike
 pip3 install -r ~/toolbox-appsec/scanners/XSStrike/requirements.txt --break-system-packages
 
-echo "[+] Instalando Dirsearch..."
+echo "[+] Ferramenta 9/13 -> Instalando Dirsearch..."
 git clone https://github.com/maurosoria/dirsearch.git
 mv dirsearch toolbox-appsec/fuzzing/
 
-echo "[+] Instalando Semgrep..."
+echo "[+] Ferramenta 10/13 -> Instalando Semgrep..."
 pip3 install semgrep --break-system-packages
 ln -s $(which semgrep) ~/toolbox-appsec/static-analysis/semgrep
 
-echo "[+] Instalando Bandit..."
+echo "[+] Ferramenta 11/13 -> Instalando Bandit..."
 pip3 install bandit --break-system-packages
 ln -s $(which bandit) ~/toolbox-appsec/static-analysis/bandit
 
-echo "[+] Instalando Gitleaks..."
+echo "[+] Ferramenta 12/13 -> Instalando Gitleaks..."
 git clone https://github.com/gitleaks/gitleaks.git
 mv gitleaks toolbox-appsec/utils/
 
-echo "[+] Instalando Trivy..."
+echo "[+] Ferramenta 13/13 -> Instalando Trivy..."
 git clone https://github.com/aquasecurity/trivy
 mv trivy toolbox-appsec/utils/
 
