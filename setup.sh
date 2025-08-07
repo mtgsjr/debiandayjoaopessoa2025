@@ -67,7 +67,9 @@ mv trivy toolbox-appsec/utils/
 
 echo "Atribuindo as permissões ao Docker"
 sudo usermod -aG docker $USER
+newgrp docker
 sudo usermod -aG sudo vboxuser
 
 echo "[+] Instalação concluída com sucesso!"
-echo "[!] Faça logout/login para aplicar permissões do Docker (ou use 'newgrp docker')"
+echo " "
+echo "[!] Faça reboot para aplicar as permissões"
