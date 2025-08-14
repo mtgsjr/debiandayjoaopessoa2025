@@ -14,10 +14,10 @@ echo "Entrar no diretório docker do projeto"
 cd crAPI-main/deploy/docker
 
 echo "Fazendo o download da imagem"
-sudo docker compose pull
+sudo docker-compose pull
 
 echo "Execute o container"
-sudo docker compose -f docker-compose.yml --compatibility up -d
+sudo docker-compose -f docker-compose.yml --compatibility up -d
 
 #Acesse o projeto em
 #http://localhost:8888
