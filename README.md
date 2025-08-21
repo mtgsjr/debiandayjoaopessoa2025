@@ -2,9 +2,8 @@
 
 Repositório do meu material de palestra.
 
-Materiais disponibilizados:
-
-### Arquivos PPT e PDF da apresentação
+### Materiais disponibilizados:
+- Arquivos PPT e PDF da apresentação
 
 ### Script de instalação dos pacotes essenciais
 - Setup de instalação básica (setup-debian-13.0.0-amd64-netinst.sh)
